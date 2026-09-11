@@ -10,6 +10,11 @@ const { chaosMiddleware } = require('./middleware/testHooks');
 const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
 const { seed } = require('./utils/seed');
 const openapiDoc = require('./openapi.json');
+const { version: APP_VERSION } = require('../package.json');
+
+// Keep the served OpenAPI doc's version in sync with package.json rather
+// than letting the two drift apart.
+openapiDoc.info.version = APP_VERSION;
 
 const authRoutes = require('./routes/auth');
 const flightRoutes = require('./routes/flights');
@@ -35,7 +40,7 @@ app.use(cors({ origin: CORS_ORIGIN }));
 app.use(express.json());
 app.use(chaosMiddleware);
 
-app.get('/api/health', (req, res) => res.json({ status: 'ok', time: new Date().toISOString() }));
+app.get('/api/health', (req, res) => res.json({ status: 'ok', version: APP_VERSION, time: new Date().toISOString() }));
 
 app.use('/api/auth', authRoutes);
 app.use('/api/flights', flightRoutes);

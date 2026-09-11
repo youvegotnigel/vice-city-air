@@ -57,6 +57,14 @@ If you changed `PORT` in your `.env`, stop that port directly instead:
 
 ## Run with Docker
 
+Pull the published image straight from Docker Hub:
+
+```bash
+docker run --rm -p 3000:3000 youvegotnigel/vice-city-air
+```
+
+Or build it locally instead:
+
 ```bash
 docker build -t flight-reservation-demo .
 docker run --rm -p 3000:3000 flight-reservation-demo
@@ -143,6 +151,27 @@ public/           Static single-page frontend (no build step)
   css/styles.css
   images/         generated SVG placeholder airline logos / destination art
 ```
+
+## Releasing
+
+Versioning follows [SemVer](https://semver.org/) and lives in `package.json`
+only — nothing else needs updating by hand. To cut a release:
+
+```bash
+npm version patch   # or: minor / major
+git push --follow-tags
+```
+
+`npm version` bumps `package.json`/`package-lock.json`, commits, and creates
+a `vX.Y.Z` tag. Pushing that tag triggers the
+[`docker-publish`](.github/workflows/docker-publish.yml) GitHub Actions
+workflow, which builds a multi-arch (amd64 + arm64) image and pushes it to
+[Docker Hub](https://hub.docker.com/r/youvegotnigel/vice-city-air) as
+`:X.Y.Z`, `:X.Y`, and `:latest`. Add a note to
+[CHANGELOG.md](CHANGELOG.md) describing what changed before tagging.
+
+The running app reports its own version at `GET /api/health` and in the
+page footer.
 
 ## Resetting Demo Data
 

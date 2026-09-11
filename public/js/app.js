@@ -24,9 +24,21 @@ const App = (() => {
     refreshNav();
   }
 
+  function loadVersion() {
+    const el = document.getElementById('app-version');
+    if (!el) return;
+    fetch('/api/health')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.version) el.textContent = `v${data.version}`;
+      })
+      .catch(() => {});
+  }
+
   function init() {
     document.getElementById('logout-btn').addEventListener('click', logout);
     refreshNav();
+    loadVersion();
     Router.start();
   }
 
