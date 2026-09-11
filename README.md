@@ -96,6 +96,35 @@ override any of `PORT`, `NODE_ENV`, `JWT_SECRET`, or `CORS_ORIGIN` — Compose
 picks up a `.env` file in the project root automatically. Stop with
 `docker compose down` (or `Ctrl+C` if running in the foreground).
 
+### Run without cloning the repo
+
+Anyone with just Docker installed — no Node, no git clone — can run the
+published image directly:
+
+```bash
+docker run -d --name vice-city-air \
+  -p 3000:3000 \
+  -v vice-city-air-data:/app/server/data \
+  youvegotnigel/vice-city-air
+```
+
+`-v vice-city-air-data:/app/server/data` is a named Docker volume (created
+automatically) so data survives container restarts without needing any
+local files. Drop it for a fully throwaway run. `docker logs -f
+vice-city-air` to follow output, `docker stop vice-city-air` to stop it.
+
+Prefer Compose? Save [`docker-compose.hub.yml`](docker-compose.hub.yml)
+anywhere and run:
+
+```bash
+docker compose -f docker-compose.hub.yml up -d
+```
+
+Both pull `youvegotnigel/vice-city-air` straight from Docker Hub and
+default to `NODE_ENV=development` (test-automation hooks enabled), same as
+building locally. Override via `-e` flags or environment variables — see
+Configuration below.
+
 ## Configuration
 
 Copy `.env.example` to `.env` to override defaults:

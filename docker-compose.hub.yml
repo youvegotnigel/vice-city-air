@@ -1,0 +1,25 @@
+# Standalone compose file for running the published image WITHOUT cloning
+# this repo — the only prerequisite is Docker. Save this file anywhere and
+# run `docker compose -f docker-compose.hub.yml up -d`.
+#
+# Data persists across container restarts in a named Docker volume instead
+# of a bind mount, since there's no local `server/data` folder to mount.
+#
+# Override any variable via the environment or a `.env` file placed next to
+# this one, e.g.: JWT_SECRET=some-real-secret docker compose -f docker-compose.hub.yml up -d
+# See README.md's "Configuration" section for what each one does.
+services:
+  app:
+    image: youvegotnigel/vice-city-air:${TAG:-latest}
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      PORT: 3000
+      JWT_SECRET: ${JWT_SECRET:-change-this-secret-in-real-deployments}
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:3000}
+    volumes:
+      - vice-city-air-data:/app/server/data
+
+volumes:
+  vice-city-air-data:
