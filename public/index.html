@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vice City Air - Flight Reservations</title>
+  <link rel="icon" href="/images/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="app-header">
+    <div class="app-header__bar">
+      <a href="#/" class="brand" data-testid="brand-home-link">
+        <img src="/images/logo.svg" alt="" class="brand__icon" />
+        <span>Vice City Air</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation" data-testid="main-nav">
+        <a href="#/search" data-testid="nav-search">Search Flights</a>
+        <a href="#/my-bookings" data-testid="nav-my-bookings" data-auth="passenger,admin" hidden>My Bookings</a>
+        <a href="#/admin/dashboard" data-testid="nav-admin-dashboard" data-auth="admin" hidden>Admin Dashboard</a>
+        <a href="#/admin/flights" data-testid="nav-admin-flights" data-auth="admin" hidden>Manage Flights</a>
+        <a href="#/admin/users" data-testid="nav-admin-users" data-auth="admin" hidden>Manage Users</a>
+        <a href="#/admin/airports" data-testid="nav-admin-airports" data-auth="admin" hidden>Manage Airports</a>
+      </nav>
+      <div class="header-actions">
+        <span class="user-chip" id="user-chip" data-testid="user-chip" hidden></span>
+        <a href="#/login" class="btn btn--ghost" data-testid="nav-login" data-auth="guest">Log in</a>
+        <button type="button" class="btn btn--ghost" id="logout-btn" data-testid="logout-btn" data-auth="passenger,admin" hidden>Log out</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <div id="toast" class="toast" role="status" aria-live="polite" data-testid="toast" hidden></div>
+    <div id="view-root" data-testid="view-root"></div>
+  </main>
+
+  <footer class="app-footer">
+    <p>Vice City Air. Demo application for test automation practice. Not a real airline. A fan-made GTA VI-inspired reskin, done purely for fun; not affiliated with or endorsed by Rockstar Games/Take-Two.</p>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/state.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/views.js"></script>
+  <script src="/js/admin.js"></script>
+  <script src="/js/router.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

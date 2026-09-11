@@ -1,0 +1,209 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Flight Reservation Demo API",
+    "version": "1.0.0",
+    "description": "JSON-file-backed REST API for the Flight Reservation demo app. Used as an AUT for API test automation. See REQUIREMENTS.md in the repo for the documented list of intentional security good/bad practices."
+  },
+  "servers": [{ "url": "/api" }],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": { "type": "http", "scheme": "bearer", "bearerFormat": "JWT" }
+    },
+    "schemas": {
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "role": { "type": "string", "enum": ["admin", "passenger"] },
+          "name": { "type": "string" },
+          "email": { "type": "string" },
+          "passportNumber": { "type": "string" }
+        }
+      },
+      "Flight": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "flightNumber": { "type": "string" },
+          "airline": { "type": "string" },
+          "origin": { "type": "object" },
+          "destination": { "type": "object" },
+          "departureTime": { "type": "string", "format": "date-time" },
+          "arrivalTime": { "type": "string", "format": "date-time" },
+          "price": { "type": "number" },
+          "status": { "type": "string", "enum": ["on-time", "delayed", "cancelled"] },
+          "capacity": { "type": "integer" },
+          "description": { "type": "string" }
+        }
+      },
+      "Airport": {
+        "type": "object",
+        "properties": {
+          "code": { "type": "string", "description": "3-letter IATA code, uppercased", "example": "MIA" },
+          "city": { "type": "string" },
+          "country": { "type": "string" }
+        }
+      },
+      "Booking": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "bookingReference": { "type": "string" },
+          "userId": { "type": "integer" },
+          "flightId": { "type": "integer" },
+          "seats": { "type": "array", "items": { "type": "string" }, "example": ["3A", "3B"] },
+          "passengerName": { "type": "string" },
+          "specialRequests": { "type": "string" },
+          "status": { "type": "string", "enum": ["confirmed", "cancelled"] }
+        }
+      }
+    }
+  },
+  "security": [{ "bearerAuth": [] }],
+  "paths": {
+    "/health": {
+      "get": { "summary": "Health check", "security": [], "responses": { "200": { "description": "OK" } } }
+    },
+    "/auth/login": {
+      "post": {
+        "summary": "Log in with email + password",
+        "security": [],
+        "requestBody": {
+          "required": true,
+          "content": { "application/json": { "schema": { "type": "object", "properties": { "email": { "type": "string" }, "password": { "type": "string" } }, "required": ["email", "password"] } } }
+        },
+        "responses": { "200": { "description": "Token + user" }, "401": { "description": "Invalid credentials" }, "429": { "description": "Rate limited" } }
+      }
+    },
+    "/auth/me": {
+      "get": { "summary": "Get the current authenticated user", "responses": { "200": { "description": "Current user" }, "401": { "description": "Not authenticated" } } }
+    },
+    "/airports": {
+      "get": { "summary": "List airports", "security": [], "responses": { "200": { "description": "Airport list" } } },
+      "post": {
+        "summary": "Add an airport (admin only)",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "code": { "type": "string", "description": "3-letter IATA code (case-insensitive, stored uppercased)", "example": "MIA" },
+                  "city": { "type": "string" },
+                  "country": { "type": "string" }
+                },
+                "required": ["code", "city", "country"]
+              }
+            }
+          }
+        },
+        "responses": { "201": { "description": "Created" }, "400": { "description": "Missing field or invalid IATA code" }, "403": { "description": "Admin only" }, "409": { "description": "An airport with this code already exists" } }
+      }
+    },
+    "/airports/{code}": {
+      "put": {
+        "summary": "Edit an airport (admin only)",
+        "parameters": [{ "name": "code", "in": "path", "required": true, "schema": { "type": "string" }, "description": "Current 3-letter IATA code" }],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "code": { "type": "string", "description": "New IATA code, if changing it" },
+                  "city": { "type": "string" },
+                  "country": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "responses": { "200": { "description": "Updated airport" }, "400": { "description": "Invalid IATA code or empty field" }, "403": { "description": "Admin only" }, "404": { "description": "Not found" }, "409": { "description": "An airport with this code already exists" } }
+      },
+      "delete": {
+        "summary": "Delete an airport (admin only)",
+        "parameters": [{ "name": "code", "in": "path", "required": true, "schema": { "type": "string" } }],
+        "responses": { "204": { "description": "Deleted" }, "403": { "description": "Admin only" }, "404": { "description": "Not found" } }
+      }
+    },
+    "/flights": {
+      "get": {
+        "summary": "Search flights",
+        "security": [],
+        "parameters": [
+          { "name": "origin", "in": "query", "schema": { "type": "string" } },
+          { "name": "destination", "in": "query", "schema": { "type": "string" } },
+          { "name": "date", "in": "query", "schema": { "type": "string", "format": "date" } },
+          { "name": "maxPrice", "in": "query", "schema": { "type": "number" } },
+          { "name": "status", "in": "query", "schema": { "type": "string" } }
+        ],
+        "responses": { "200": { "description": "Matching flights" } }
+      },
+      "post": { "summary": "Add a flight (admin only)", "responses": { "201": { "description": "Created" }, "403": { "description": "Admin only" } } }
+    },
+    "/flights/{id}": {
+      "get": { "summary": "Get flight details + seat map", "security": [], "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }], "responses": { "200": { "description": "Flight" }, "404": { "description": "Not found" } } },
+      "put": { "summary": "Edit a flight", "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }], "responses": { "200": { "description": "Updated flight" } } },
+      "delete": { "summary": "Delete a flight (admin only)", "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }], "responses": { "204": { "description": "Deleted" }, "403": { "description": "Admin only" } } }
+    },
+    "/bookings": {
+      "get": { "summary": "List bookings (own bookings for passengers, all for admin)", "responses": { "200": { "description": "Bookings" } } },
+      "post": {
+        "summary": "Create a booking (one or more seats) and pay for it",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "flightId": { "type": "integer" },
+                  "seats": { "type": "array", "items": { "type": "string" }, "example": ["3A", "3B"], "description": "1-9 seat labels to book together" },
+                  "passengerName": { "type": "string" },
+                  "specialRequests": { "type": "string" },
+                  "payment": {
+                    "type": "object",
+                    "properties": { "cardNumber": { "type": "string" }, "expiry": { "type": "string", "example": "12/27" }, "cvv": { "type": "string" } },
+                    "required": ["cardNumber", "expiry", "cvv"]
+                  }
+                },
+                "required": ["flightId", "seats", "passengerName", "payment"]
+              }
+            }
+          }
+        },
+        "responses": { "201": { "description": "Booking created" }, "400": { "description": "Invalid seats, duplicate seat, or more than 9 seats requested" }, "409": { "description": "One or more seats already booked" } }
+      }
+    },
+    "/bookings/{id}": {
+      "get": { "summary": "Get a booking by id", "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }], "responses": { "200": { "description": "Booking" }, "404": { "description": "Not found" } } }
+    },
+    "/bookings/{id}/cancel": {
+      "put": { "summary": "Cancel a booking", "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }], "responses": { "200": { "description": "Cancelled booking" } } }
+    },
+    "/bookings/{id}/receipt": {
+      "get": { "summary": "Get printable receipt data for a booking", "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }], "responses": { "200": { "description": "Receipt" } } }
+    },
+    "/users": {
+      "get": { "summary": "List all users (admin only)", "responses": { "200": { "description": "Users" }, "403": { "description": "Admin only" } } },
+      "post": { "summary": "Add a user (admin only)", "responses": { "201": { "description": "Created" } } }
+    },
+    "/users/{id}": {
+      "put": { "summary": "Edit a user (admin only)", "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }], "responses": { "200": { "description": "Updated" } } },
+      "delete": { "summary": "Delete a user (admin only)", "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }], "responses": { "204": { "description": "Deleted" } } }
+    },
+    "/dashboard/stats": {
+      "get": { "summary": "Admin dashboard statistics (admin only)", "responses": { "200": { "description": "Stats" } } }
+    },
+    "/test/reset": {
+      "post": { "summary": "Reset all data to seed state (test automation hook, disabled in production)", "security": [], "responses": { "200": { "description": "Reset" }, "403": { "description": "Disabled in production" } } }
+    },
+    "/test/config": {
+      "get": { "summary": "Get chaos-testing config (test automation hook)", "security": [], "responses": { "200": { "description": "Config" } } },
+      "post": { "summary": "Set simulated latency/error-rate (test automation hook)", "security": [], "responses": { "200": { "description": "Updated config" } } }
+    }
+  }
+}

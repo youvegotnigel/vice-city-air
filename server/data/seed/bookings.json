@@ -1,0 +1,1155 @@
+[
+  {
+    "id": 1,
+    "bookingReference": "BKG-000001",
+    "userId": 2,
+    "flightId": 1,
+    "seats": [
+      "1D",
+      "1C"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "Window seat if possible, travelling with a small carry-on only.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "4242",
+      "amount": 960,
+      "currency": "USD",
+      "paidAt": "2026-09-10T12:23:12.883Z",
+      "receiptId": "RCPT-000001"
+    },
+    "createdAt": "2026-09-10T12:23:12.883Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 2,
+    "bookingReference": "BKG-000002",
+    "userId": 3,
+    "flightId": 8,
+    "seats": [
+      "2D"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "",
+    "status": "cancelled",
+    "payment": {
+      "cardLast4": "1881",
+      "amount": 540,
+      "currency": "USD",
+      "paidAt": "2026-09-08T12:23:12.883Z",
+      "receiptId": "RCPT-000002"
+    },
+    "createdAt": "2026-09-08T12:23:12.883Z",
+    "cancelledAt": "2026-09-09T12:23:12.883Z"
+  },
+  {
+    "id": 3,
+    "bookingReference": "BKG-000003",
+    "userId": 2,
+    "flightId": 1,
+    "seats": [
+      "6D",
+      "2D",
+      "5A"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "Extra legroom preferred.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "2371",
+      "amount": 1440,
+      "currency": "USD",
+      "paidAt": "2026-08-26T08:56:56.210Z",
+      "receiptId": "RCPT-000003"
+    },
+    "createdAt": "2026-08-26T08:56:56.210Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 4,
+    "bookingReference": "BKG-000004",
+    "userId": 4,
+    "flightId": 1,
+    "seats": [
+      "3C"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "8039",
+      "amount": 480,
+      "currency": "USD",
+      "paidAt": "2026-09-06T22:26:56.861Z",
+      "receiptId": "RCPT-000004"
+    },
+    "createdAt": "2026-09-06T22:26:56.861Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 5,
+    "bookingReference": "BKG-000005",
+    "userId": 2,
+    "flightId": 1,
+    "seats": [
+      "1A"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "Please seat together with the rest of my family.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "7184",
+      "amount": 480,
+      "currency": "USD",
+      "paidAt": "2026-09-01T20:18:20.093Z",
+      "receiptId": "RCPT-000005"
+    },
+    "createdAt": "2026-09-01T20:18:20.093Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 6,
+    "bookingReference": "BKG-000006",
+    "userId": 2,
+    "flightId": 1,
+    "seats": [
+      "2A",
+      "5C"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "Window seat if possible.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "6685",
+      "amount": 960,
+      "currency": "USD",
+      "paidAt": "2026-09-02T09:13:43.685Z",
+      "receiptId": "RCPT-000006"
+    },
+    "createdAt": "2026-09-02T09:13:43.685Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 7,
+    "bookingReference": "BKG-000007",
+    "userId": 4,
+    "flightId": 1,
+    "seats": [
+      "3A"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Please seat together with the rest of my family.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "9149",
+      "amount": 480,
+      "currency": "USD",
+      "paidAt": "2026-09-07T05:50:30.485Z",
+      "receiptId": "RCPT-000007"
+    },
+    "createdAt": "2026-09-07T05:50:30.485Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 8,
+    "bookingReference": "BKG-000008",
+    "userId": 3,
+    "flightId": 1,
+    "seats": [
+      "4B"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "5775",
+      "amount": 480,
+      "currency": "USD",
+      "paidAt": "2026-08-22T20:50:09.740Z",
+      "receiptId": "RCPT-000008"
+    },
+    "createdAt": "2026-08-22T20:50:09.740Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 9,
+    "bookingReference": "BKG-000009",
+    "userId": 2,
+    "flightId": 2,
+    "seats": [
+      "1C",
+      "3D"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "Quiet seat away from the galley if possible.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "8671",
+      "amount": 240,
+      "currency": "USD",
+      "paidAt": "2026-08-29T04:39:29.241Z",
+      "receiptId": "RCPT-000009"
+    },
+    "createdAt": "2026-08-29T04:39:29.241Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 10,
+    "bookingReference": "BKG-000010",
+    "userId": 2,
+    "flightId": 2,
+    "seats": [
+      "3A"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "",
+    "status": "cancelled",
+    "payment": {
+      "cardLast4": "6332",
+      "amount": 120,
+      "currency": "USD",
+      "paidAt": "2026-09-06T23:24:15.165Z",
+      "receiptId": "RCPT-000010"
+    },
+    "createdAt": "2026-09-06T23:24:15.165Z",
+    "cancelledAt": "2026-09-08T06:56:40.676Z"
+  },
+  {
+    "id": 11,
+    "bookingReference": "BKG-000011",
+    "userId": 4,
+    "flightId": 2,
+    "seats": [
+      "4B",
+      "3B"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Celebrating an anniversary, a window seat would be lovely.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "6102",
+      "amount": 240,
+      "currency": "USD",
+      "paidAt": "2026-09-03T10:23:52.117Z",
+      "receiptId": "RCPT-000011"
+    },
+    "createdAt": "2026-09-03T10:23:52.117Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 12,
+    "bookingReference": "BKG-000012",
+    "userId": 4,
+    "flightId": 2,
+    "seats": [
+      "5C",
+      "6D",
+      "1A"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Quiet seat away from the galley if possible.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "1102",
+      "amount": 360,
+      "currency": "USD",
+      "paidAt": "2026-08-30T15:23:05.746Z",
+      "receiptId": "RCPT-000012"
+    },
+    "createdAt": "2026-08-30T15:23:05.746Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 13,
+    "bookingReference": "BKG-000013",
+    "userId": 3,
+    "flightId": 3,
+    "seats": [
+      "3C"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "Vegetarian meal requested.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "6413",
+      "amount": 560,
+      "currency": "USD",
+      "paidAt": "2026-09-05T11:48:41.666Z",
+      "receiptId": "RCPT-000013"
+    },
+    "createdAt": "2026-09-05T11:48:41.666Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 14,
+    "bookingReference": "BKG-000014",
+    "userId": 3,
+    "flightId": 3,
+    "seats": [
+      "4C"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "Wheelchair assistance needed at the gate.",
+    "status": "cancelled",
+    "payment": {
+      "cardLast4": "7385",
+      "amount": 560,
+      "currency": "USD",
+      "paidAt": "2026-09-08T21:44:54.484Z",
+      "receiptId": "RCPT-000014"
+    },
+    "createdAt": "2026-09-08T21:44:54.484Z",
+    "cancelledAt": "2026-09-10T02:37:03.665Z"
+  },
+  {
+    "id": 15,
+    "bookingReference": "BKG-000015",
+    "userId": 4,
+    "flightId": 3,
+    "seats": [
+      "3A",
+      "6D",
+      "5B",
+      "5A"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Aisle seat please.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "1227",
+      "amount": 2240,
+      "currency": "USD",
+      "paidAt": "2026-09-06T19:18:00.931Z",
+      "receiptId": "RCPT-000015"
+    },
+    "createdAt": "2026-09-06T19:18:00.931Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 16,
+    "bookingReference": "BKG-000016",
+    "userId": 4,
+    "flightId": 4,
+    "seats": [
+      "6D"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Traveling with an infant, bassinet seat if available.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "7050",
+      "amount": 610,
+      "currency": "USD",
+      "paidAt": "2026-08-26T09:50:52.213Z",
+      "receiptId": "RCPT-000016"
+    },
+    "createdAt": "2026-08-26T09:50:52.213Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 17,
+    "bookingReference": "BKG-000017",
+    "userId": 2,
+    "flightId": 4,
+    "seats": [
+      "6C"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "Extra legroom preferred.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "2181",
+      "amount": 610,
+      "currency": "USD",
+      "paidAt": "2026-08-22T20:59:24.854Z",
+      "receiptId": "RCPT-000017"
+    },
+    "createdAt": "2026-08-22T20:59:24.854Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 18,
+    "bookingReference": "BKG-000018",
+    "userId": 2,
+    "flightId": 4,
+    "seats": [
+      "4A"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "Quiet seat away from the galley if possible.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "8394",
+      "amount": 610,
+      "currency": "USD",
+      "paidAt": "2026-08-22T19:51:48.992Z",
+      "receiptId": "RCPT-000018"
+    },
+    "createdAt": "2026-08-22T19:51:48.992Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 19,
+    "bookingReference": "BKG-000019",
+    "userId": 4,
+    "flightId": 4,
+    "seats": [
+      "1B",
+      "3B",
+      "4C"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Aisle seat please.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "5525",
+      "amount": 1830,
+      "currency": "USD",
+      "paidAt": "2026-08-25T13:14:54.174Z",
+      "receiptId": "RCPT-000019"
+    },
+    "createdAt": "2026-08-25T13:14:54.174Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 20,
+    "bookingReference": "BKG-000020",
+    "userId": 4,
+    "flightId": 5,
+    "seats": [
+      "5D"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Please seat together with the rest of my family.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "5551",
+      "amount": 590,
+      "currency": "USD",
+      "paidAt": "2026-09-07T10:30:35.652Z",
+      "receiptId": "RCPT-000020"
+    },
+    "createdAt": "2026-09-07T10:30:35.652Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 21,
+    "bookingReference": "BKG-000021",
+    "userId": 4,
+    "flightId": 5,
+    "seats": [
+      "2C"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Wheelchair assistance needed at the gate.",
+    "status": "cancelled",
+    "payment": {
+      "cardLast4": "3821",
+      "amount": 590,
+      "currency": "USD",
+      "paidAt": "2026-08-25T08:03:35.993Z",
+      "receiptId": "RCPT-000021"
+    },
+    "createdAt": "2026-08-25T08:03:35.993Z",
+    "cancelledAt": "2026-08-27T07:55:52.808Z"
+  },
+  {
+    "id": 22,
+    "bookingReference": "BKG-000022",
+    "userId": 3,
+    "flightId": 5,
+    "seats": [
+      "6A",
+      "5A",
+      "4A"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "6139",
+      "amount": 1770,
+      "currency": "USD",
+      "paidAt": "2026-09-06T02:27:43.100Z",
+      "receiptId": "RCPT-000022"
+    },
+    "createdAt": "2026-09-06T02:27:43.100Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 23,
+    "bookingReference": "BKG-000023",
+    "userId": 2,
+    "flightId": 5,
+    "seats": [
+      "3C"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "9344",
+      "amount": 590,
+      "currency": "USD",
+      "paidAt": "2026-08-28T01:35:15.475Z",
+      "receiptId": "RCPT-000023"
+    },
+    "createdAt": "2026-08-28T01:35:15.475Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 24,
+    "bookingReference": "BKG-000024",
+    "userId": 3,
+    "flightId": 5,
+    "seats": [
+      "3A",
+      "6C",
+      "6B"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "Quiet seat away from the galley if possible.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "2238",
+      "amount": 1770,
+      "currency": "USD",
+      "paidAt": "2026-08-28T12:02:54.714Z",
+      "receiptId": "RCPT-000024"
+    },
+    "createdAt": "2026-08-28T12:02:54.714Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 25,
+    "bookingReference": "BKG-000025",
+    "userId": 4,
+    "flightId": 5,
+    "seats": [
+      "3B",
+      "1C",
+      "1B",
+      "6D"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Celebrating an anniversary, a window seat would be lovely.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "4924",
+      "amount": 2360,
+      "currency": "USD",
+      "paidAt": "2026-08-23T02:49:37.859Z",
+      "receiptId": "RCPT-000025"
+    },
+    "createdAt": "2026-08-23T02:49:37.859Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 26,
+    "bookingReference": "BKG-000026",
+    "userId": 3,
+    "flightId": 6,
+    "seats": [
+      "6A",
+      "4C"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "Quiet seat away from the galley if possible.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "1360",
+      "amount": 1440,
+      "currency": "USD",
+      "paidAt": "2026-08-24T10:49:44.001Z",
+      "receiptId": "RCPT-000026"
+    },
+    "createdAt": "2026-08-24T10:49:44.001Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 27,
+    "bookingReference": "BKG-000027",
+    "userId": 4,
+    "flightId": 6,
+    "seats": [
+      "3B"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Vegetarian meal requested.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "7961",
+      "amount": 720,
+      "currency": "USD",
+      "paidAt": "2026-09-09T20:22:29.775Z",
+      "receiptId": "RCPT-000027"
+    },
+    "createdAt": "2026-09-09T20:22:29.775Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 28,
+    "bookingReference": "BKG-000028",
+    "userId": 2,
+    "flightId": 6,
+    "seats": [
+      "5B",
+      "5D",
+      "6D",
+      "1A"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "8319",
+      "amount": 2880,
+      "currency": "USD",
+      "paidAt": "2026-08-25T14:40:50.104Z",
+      "receiptId": "RCPT-000028"
+    },
+    "createdAt": "2026-08-25T14:40:50.104Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 29,
+    "bookingReference": "BKG-000029",
+    "userId": 4,
+    "flightId": 7,
+    "seats": [
+      "6D",
+      "6C",
+      "4D",
+      "3C"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Vegetarian meal requested.",
+    "status": "cancelled",
+    "payment": {
+      "cardLast4": "7421",
+      "amount": 1720,
+      "currency": "USD",
+      "paidAt": "2026-08-30T14:36:36.983Z",
+      "receiptId": "RCPT-000029"
+    },
+    "createdAt": "2026-08-30T14:36:36.983Z",
+    "cancelledAt": "2026-08-31T15:59:42.367Z"
+  },
+  {
+    "id": 30,
+    "bookingReference": "BKG-000030",
+    "userId": 2,
+    "flightId": 8,
+    "seats": [
+      "6A",
+      "6D",
+      "2C",
+      "6B"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "Celebrating an anniversary, a window seat would be lovely.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "5982",
+      "amount": 2160,
+      "currency": "USD",
+      "paidAt": "2026-09-01T22:54:58.985Z",
+      "receiptId": "RCPT-000030"
+    },
+    "createdAt": "2026-09-01T22:54:58.985Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 31,
+    "bookingReference": "BKG-000031",
+    "userId": 3,
+    "flightId": 8,
+    "seats": [
+      "5A"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "Please seat together with the rest of my family.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "6577",
+      "amount": 540,
+      "currency": "USD",
+      "paidAt": "2026-09-10T00:06:31.420Z",
+      "receiptId": "RCPT-000031"
+    },
+    "createdAt": "2026-09-10T00:06:31.420Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 32,
+    "bookingReference": "BKG-000032",
+    "userId": 2,
+    "flightId": 8,
+    "seats": [
+      "3B",
+      "3A",
+      "2A",
+      "4B"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "Wheelchair assistance needed at the gate.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "2276",
+      "amount": 2160,
+      "currency": "USD",
+      "paidAt": "2026-09-07T03:20:15.411Z",
+      "receiptId": "RCPT-000032"
+    },
+    "createdAt": "2026-09-07T03:20:15.411Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 33,
+    "bookingReference": "BKG-000033",
+    "userId": 2,
+    "flightId": 8,
+    "seats": [
+      "3D"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "Window seat if possible.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "2335",
+      "amount": 540,
+      "currency": "USD",
+      "paidAt": "2026-08-25T01:17:57.410Z",
+      "receiptId": "RCPT-000033"
+    },
+    "createdAt": "2026-08-25T01:17:57.410Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 34,
+    "bookingReference": "BKG-000034",
+    "userId": 2,
+    "flightId": 9,
+    "seats": [
+      "3C",
+      "1D"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "Quiet seat away from the galley if possible.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "7505",
+      "amount": 1300,
+      "currency": "USD",
+      "paidAt": "2026-09-02T21:15:25.456Z",
+      "receiptId": "RCPT-000034"
+    },
+    "createdAt": "2026-09-02T21:15:25.456Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 35,
+    "bookingReference": "BKG-000035",
+    "userId": 4,
+    "flightId": 9,
+    "seats": [
+      "6B",
+      "3B",
+      "6A"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Traveling with an infant, bassinet seat if available.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "1770",
+      "amount": 1950,
+      "currency": "USD",
+      "paidAt": "2026-09-03T12:09:32.439Z",
+      "receiptId": "RCPT-000035"
+    },
+    "createdAt": "2026-09-03T12:09:32.439Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 36,
+    "bookingReference": "BKG-000036",
+    "userId": 2,
+    "flightId": 9,
+    "seats": [
+      "4B"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "Extra legroom preferred.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "5446",
+      "amount": 650,
+      "currency": "USD",
+      "paidAt": "2026-09-03T20:06:18.533Z",
+      "receiptId": "RCPT-000036"
+    },
+    "createdAt": "2026-09-03T20:06:18.533Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 37,
+    "bookingReference": "BKG-000037",
+    "userId": 3,
+    "flightId": 9,
+    "seats": [
+      "2D",
+      "5A"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "Celebrating an anniversary, a window seat would be lovely.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "3546",
+      "amount": 1300,
+      "currency": "USD",
+      "paidAt": "2026-08-27T13:07:49.336Z",
+      "receiptId": "RCPT-000037"
+    },
+    "createdAt": "2026-08-27T13:07:49.336Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 38,
+    "bookingReference": "BKG-000038",
+    "userId": 2,
+    "flightId": 10,
+    "seats": [
+      "2B"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "1613",
+      "amount": 210,
+      "currency": "USD",
+      "paidAt": "2026-09-02T13:58:07.492Z",
+      "receiptId": "RCPT-000038"
+    },
+    "createdAt": "2026-09-02T13:58:07.492Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 39,
+    "bookingReference": "BKG-000039",
+    "userId": 2,
+    "flightId": 10,
+    "seats": [
+      "4A"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "Vegetarian meal requested.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "2170",
+      "amount": 210,
+      "currency": "USD",
+      "paidAt": "2026-08-27T11:54:41.365Z",
+      "receiptId": "RCPT-000039"
+    },
+    "createdAt": "2026-08-27T11:54:41.365Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 40,
+    "bookingReference": "BKG-000040",
+    "userId": 4,
+    "flightId": 10,
+    "seats": [
+      "5B"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Extra legroom preferred.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "5321",
+      "amount": 210,
+      "currency": "USD",
+      "paidAt": "2026-08-31T01:12:01.075Z",
+      "receiptId": "RCPT-000040"
+    },
+    "createdAt": "2026-08-31T01:12:01.075Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 41,
+    "bookingReference": "BKG-000041",
+    "userId": 3,
+    "flightId": 10,
+    "seats": [
+      "5D",
+      "4D"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "Wheelchair assistance needed at the gate.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "1500",
+      "amount": 420,
+      "currency": "USD",
+      "paidAt": "2026-08-31T08:20:11.348Z",
+      "receiptId": "RCPT-000041"
+    },
+    "createdAt": "2026-08-31T08:20:11.348Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 42,
+    "bookingReference": "BKG-000042",
+    "userId": 3,
+    "flightId": 10,
+    "seats": [
+      "6B"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "Vegetarian meal requested.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "2536",
+      "amount": 210,
+      "currency": "USD",
+      "paidAt": "2026-08-31T19:07:44.939Z",
+      "receiptId": "RCPT-000042"
+    },
+    "createdAt": "2026-08-31T19:07:44.939Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 43,
+    "bookingReference": "BKG-000043",
+    "userId": 4,
+    "flightId": 11,
+    "seats": [
+      "4A"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Wheelchair assistance needed at the gate.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "5118",
+      "amount": 220,
+      "currency": "USD",
+      "paidAt": "2026-08-31T11:12:28.633Z",
+      "receiptId": "RCPT-000043"
+    },
+    "createdAt": "2026-08-31T11:12:28.633Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 44,
+    "bookingReference": "BKG-000044",
+    "userId": 4,
+    "flightId": 11,
+    "seats": [
+      "5B",
+      "2B"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Quiet seat away from the galley if possible.",
+    "status": "cancelled",
+    "payment": {
+      "cardLast4": "2906",
+      "amount": 440,
+      "currency": "USD",
+      "paidAt": "2026-09-10T22:01:23.619Z",
+      "receiptId": "RCPT-000044"
+    },
+    "createdAt": "2026-09-10T22:01:23.619Z",
+    "cancelledAt": "2026-09-12T09:26:57.502Z"
+  },
+  {
+    "id": 45,
+    "bookingReference": "BKG-000045",
+    "userId": 3,
+    "flightId": 12,
+    "seats": [
+      "6B"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "Quiet seat away from the galley if possible.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "1603",
+      "amount": 470,
+      "currency": "USD",
+      "paidAt": "2026-08-30T15:43:36.816Z",
+      "receiptId": "RCPT-000045"
+    },
+    "createdAt": "2026-08-30T15:43:36.816Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 46,
+    "bookingReference": "BKG-000046",
+    "userId": 4,
+    "flightId": 12,
+    "seats": [
+      "6A"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Please seat together with the rest of my family.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "9146",
+      "amount": 470,
+      "currency": "USD",
+      "paidAt": "2026-09-04T22:04:29.542Z",
+      "receiptId": "RCPT-000046"
+    },
+    "createdAt": "2026-09-04T22:04:29.542Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 47,
+    "bookingReference": "BKG-000047",
+    "userId": 3,
+    "flightId": 12,
+    "seats": [
+      "2C"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "Celebrating an anniversary, a window seat would be lovely.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "9321",
+      "amount": 470,
+      "currency": "USD",
+      "paidAt": "2026-09-04T20:13:26.137Z",
+      "receiptId": "RCPT-000047"
+    },
+    "createdAt": "2026-09-04T20:13:26.137Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 48,
+    "bookingReference": "BKG-000048",
+    "userId": 3,
+    "flightId": 12,
+    "seats": [
+      "4A"
+    ],
+    "passengerName": "Jason Duval",
+    "specialRequests": "Extra legroom preferred.",
+    "status": "cancelled",
+    "payment": {
+      "cardLast4": "5948",
+      "amount": 470,
+      "currency": "USD",
+      "paidAt": "2026-09-04T14:36:00.710Z",
+      "receiptId": "RCPT-000048"
+    },
+    "createdAt": "2026-09-04T14:36:00.710Z",
+    "cancelledAt": "2026-09-06T03:18:22.252Z"
+  },
+  {
+    "id": 49,
+    "bookingReference": "BKG-000049",
+    "userId": 4,
+    "flightId": 12,
+    "seats": [
+      "1D"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Aisle seat please.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "9815",
+      "amount": 470,
+      "currency": "USD",
+      "paidAt": "2026-08-30T12:11:45.632Z",
+      "receiptId": "RCPT-000049"
+    },
+    "createdAt": "2026-08-30T12:11:45.632Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 50,
+    "bookingReference": "BKG-000050",
+    "userId": 4,
+    "flightId": 12,
+    "seats": [
+      "4D"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Wheelchair assistance needed at the gate.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "9583",
+      "amount": 470,
+      "currency": "USD",
+      "paidAt": "2026-08-25T23:07:14.188Z",
+      "receiptId": "RCPT-000050"
+    },
+    "createdAt": "2026-08-25T23:07:14.188Z",
+    "cancelledAt": null
+  },
+  {
+    "id": 51,
+    "bookingReference": "BKG-000051",
+    "userId": 2,
+    "flightId": 12,
+    "seats": [
+      "2A"
+    ],
+    "passengerName": "Lucia Caminos",
+    "specialRequests": "",
+    "status": "cancelled",
+    "payment": {
+      "cardLast4": "2757",
+      "amount": 470,
+      "currency": "USD",
+      "paidAt": "2026-08-23T01:33:27.848Z",
+      "receiptId": "RCPT-000051"
+    },
+    "createdAt": "2026-08-23T01:33:27.848Z",
+    "cancelledAt": "2026-08-24T12:45:27.155Z"
+  },
+  {
+    "id": 52,
+    "bookingReference": "BKG-000052",
+    "userId": 4,
+    "flightId": 12,
+    "seats": [
+      "5B"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "",
+    "status": "cancelled",
+    "payment": {
+      "cardLast4": "4283",
+      "amount": 470,
+      "currency": "USD",
+      "paidAt": "2026-09-04T02:27:53.047Z",
+      "receiptId": "RCPT-000052"
+    },
+    "createdAt": "2026-09-04T02:27:53.047Z",
+    "cancelledAt": "2026-09-05T20:10:20.997Z"
+  },
+  {
+    "id": 53,
+    "bookingReference": "BKG-000053",
+    "userId": 4,
+    "flightId": 12,
+    "seats": [
+      "1B",
+      "1C"
+    ],
+    "passengerName": "Cal Hampton",
+    "specialRequests": "Vegetarian meal requested.",
+    "status": "confirmed",
+    "payment": {
+      "cardLast4": "7443",
+      "amount": 940,
+      "currency": "USD",
+      "paidAt": "2026-08-23T14:24:52.344Z",
+      "receiptId": "RCPT-000053"
+    },
+    "createdAt": "2026-08-23T14:24:52.344Z",
+    "cancelledAt": null
+  }
+]

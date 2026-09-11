@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "flightNumber": "SL101",
+    "airline": "Vice City Air",
+    "airlineLogo": "/images/airlines/vicecity.svg",
+    "origin": {
+      "code": "JFK",
+      "city": "New York",
+      "country": "USA"
+    },
+    "destination": {
+      "code": "LHR",
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "departureTime": "2026-09-13T12:23:12.652Z",
+    "arrivalTime": "2026-09-13T19:23:12.652Z",
+    "durationMinutes": 420,
+    "price": 480,
+    "currency": "USD",
+    "capacity": 24,
+    "status": "on-time",
+    "description": "Red-eye run from the city that never sleeps to the one that pretends it does. Complimentary meals, no questions about the carry-on.",
+    "image": "/images/destinations/lhr.svg",
+    "createdAt": "2026-08-12T12:23:12.653Z",
+    "updatedAt": "2026-09-10T12:23:12.653Z"
+  },
+  {
+    "id": 2,
+    "flightNumber": "PA202",
+    "airline": "Pacific Air",
+    "airlineLogo": "/images/airlines/pacific.svg",
+    "origin": {
+      "code": "LHR",
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "destination": {
+      "code": "CDG",
+      "city": "Paris",
+      "country": "France"
+    },
+    "departureTime": "2026-09-14T12:23:12.653Z",
+    "arrivalTime": "2026-09-14T13:53:12.653Z",
+    "durationMinutes": 90,
+    "price": 120,
+    "currency": "USD",
+    "capacity": 24,
+    "status": "on-time",
+    "description": "Quick hop across the Channel, perfect for a weekend you'll swear you spent \"working from home.\"",
+    "image": "/images/destinations/cdg.svg",
+    "createdAt": "2026-08-12T12:23:12.653Z",
+    "updatedAt": "2026-09-10T12:23:12.653Z"
+  },
+  {
+    "id": 3,
+    "flightNumber": "AW303",
+    "airline": "AeroWave",
+    "airlineLogo": "/images/airlines/aerowave.svg",
+    "origin": {
+      "code": "CDG",
+      "city": "Paris",
+      "country": "France"
+    },
+    "destination": {
+      "code": "DXB",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "departureTime": "2026-09-15T12:23:12.653Z",
+    "arrivalTime": "2026-09-15T18:53:12.653Z",
+    "durationMinutes": 390,
+    "price": 560,
+    "currency": "USD",
+    "capacity": 24,
+    "status": "delayed",
+    "description": "Non-stop to Dubai, extra legroom economy for the extra gold chains you're about to buy.",
+    "image": "/images/destinations/dxb.svg",
+    "createdAt": "2026-08-12T12:23:12.653Z",
+    "updatedAt": "2026-09-10T12:23:12.653Z"
+  },
+  {
+    "id": 4,
+    "flightNumber": "NW404",
+    "airline": "Northern Wings",
+    "airlineLogo": "/images/airlines/northern.svg",
+    "origin": {
+      "code": "DXB",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "destination": {
+      "code": "SIN",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "departureTime": "2026-09-16T12:23:12.653Z",
+    "arrivalTime": "2026-09-16T19:38:12.653Z",
+    "durationMinutes": 435,
+    "price": 610,
+    "currency": "USD",
+    "capacity": 24,
+    "status": "on-time",
+    "description": "Award-winning cabin crew, suspiciously good seasonal fare to Singapore. Ask no questions, get told no lies.",
+    "image": "/images/destinations/sin.svg",
+    "createdAt": "2026-08-12T12:23:12.653Z",
+    "updatedAt": "2026-09-10T12:23:12.653Z"
+  },
+  {
+    "id": 5,
+    "flightNumber": "CE505",
+    "airline": "Continental Express",
+    "airlineLogo": "/images/airlines/continental.svg",
+    "origin": {
+      "code": "SIN",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "destination": {
+      "code": "SYD",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "departureTime": "2026-09-17T12:23:12.653Z",
+    "arrivalTime": "2026-09-17T20:23:12.653Z",
+    "durationMinutes": 480,
+    "price": 590,
+    "currency": "USD",
+    "capacity": 24,
+    "status": "on-time",
+    "description": "Daily run down to Sydney, keeping the Vice City-to-Bondi pipeline open.",
+    "image": "/images/destinations/syd.svg",
+    "createdAt": "2026-08-12T12:23:12.653Z",
+    "updatedAt": "2026-09-10T12:23:12.653Z"
+  },
+  {
+    "id": 6,
+    "flightNumber": "SL606",
+    "airline": "Vice City Air",
+    "airlineLogo": "/images/airlines/vicecity.svg",
+    "origin": {
+      "code": "LAX",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "destination": {
+      "code": "HND",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "departureTime": "2026-09-14T00:23:12.653Z",
+    "arrivalTime": "2026-09-14T11:23:12.653Z",
+    "durationMinutes": 660,
+    "price": 720,
+    "currency": "USD",
+    "capacity": 24,
+    "status": "on-time",
+    "description": "Trans-Pacific run on our newest bird. Leather seats, neon reading lights, zero judgment.",
+    "image": "/images/destinations/hnd.svg",
+    "createdAt": "2026-08-12T12:23:12.653Z",
+    "updatedAt": "2026-09-10T12:23:12.653Z"
+  },
+  {
+    "id": 7,
+    "flightNumber": "PA707",
+    "airline": "Pacific Air",
+    "airlineLogo": "/images/airlines/pacific.svg",
+    "origin": {
+      "code": "HND",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "destination": {
+      "code": "SIN",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "departureTime": "2026-09-18T12:23:12.653Z",
+    "arrivalTime": "2026-09-18T19:23:12.653Z",
+    "durationMinutes": 420,
+    "price": 430,
+    "currency": "USD",
+    "capacity": 24,
+    "status": "cancelled",
+    "description": "Regional service, temporarily grounded for \"scheduled maintenance.\" Definitely maintenance.",
+    "image": "/images/destinations/sin.svg",
+    "createdAt": "2026-08-12T12:23:12.653Z",
+    "updatedAt": "2026-09-10T12:23:12.653Z"
+  },
+  {
+    "id": 8,
+    "flightNumber": "AW808",
+    "airline": "AeroWave",
+    "airlineLogo": "/images/airlines/aerowave.svg",
+    "origin": {
+      "code": "FRA",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "destination": {
+      "code": "JFK",
+      "city": "New York",
+      "country": "USA"
+    },
+    "departureTime": "2026-09-15T00:23:12.653Z",
+    "arrivalTime": "2026-09-15T09:23:12.653Z",
+    "durationMinutes": 540,
+    "price": 540,
+    "currency": "USD",
+    "capacity": 24,
+    "status": "on-time",
+    "description": "Frankfurt to JFK, our best-selling getaway route. Fares flexible enough for a very sudden vacation.",
+    "image": "/images/destinations/jfk.svg",
+    "createdAt": "2026-08-12T12:23:12.653Z",
+    "updatedAt": "2026-09-10T12:23:12.653Z"
+  },
+  {
+    "id": 9,
+    "flightNumber": "NW909",
+    "airline": "Northern Wings",
+    "airlineLogo": "/images/airlines/northern.svg",
+    "origin": {
+      "code": "CMB",
+      "city": "Colombo",
+      "country": "Sri Lanka"
+    },
+    "destination": {
+      "code": "LAX",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "departureTime": "2026-09-17T00:23:12.653Z",
+    "arrivalTime": "2026-09-17T10:23:12.653Z",
+    "durationMinutes": 600,
+    "price": 650,
+    "currency": "USD",
+    "capacity": 24,
+    "status": "delayed",
+    "description": "The long haul from Colombo to LAX. Bring snacks, bring patience, bring sunglasses for the Vice City glare on arrival.",
+    "image": "/images/destinations/lax.svg",
+    "createdAt": "2026-08-12T12:23:12.653Z",
+    "updatedAt": "2026-09-10T12:23:12.653Z"
+  },
+  {
+    "id": 10,
+    "flightNumber": "CE010",
+    "airline": "Continental Express",
+    "airlineLogo": "/images/airlines/continental.svg",
+    "origin": {
+      "code": "LAX",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "destination": {
+      "code": "JFK",
+      "city": "New York",
+      "country": "USA"
+    },
+    "departureTime": "2026-09-12T12:23:12.653Z",
+    "arrivalTime": "2026-09-12T17:53:12.653Z",
+    "durationMinutes": 330,
+    "price": 210,
+    "currency": "USD",
+    "capacity": 24,
+    "status": "on-time",
+    "description": "Coast-to-coast, several times a day. The getaway route, if you catch our drift.",
+    "image": "/images/destinations/jfk.svg",
+    "createdAt": "2026-08-12T12:23:12.653Z",
+    "updatedAt": "2026-09-10T12:23:12.653Z"
+  },
+  {
+    "id": 11,
+    "flightNumber": "SL111",
+    "airline": "Vice City Air",
+    "airlineLogo": "/images/airlines/vicecity.svg",
+    "origin": {
+      "code": "JFK",
+      "city": "New York",
+      "country": "USA"
+    },
+    "destination": {
+      "code": "LAX",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "departureTime": "2026-09-13T00:23:12.653Z",
+    "arrivalTime": "2026-09-13T06:03:12.653Z",
+    "durationMinutes": 340,
+    "price": 220,
+    "currency": "USD",
+    "capacity": 24,
+    "status": "on-time",
+    "description": "Coast-to-coast with premium economy. Upgrade your seat, not your alibi.",
+    "image": "/images/destinations/lax.svg",
+    "createdAt": "2026-08-12T12:23:12.653Z",
+    "updatedAt": "2026-09-10T12:23:12.653Z"
+  },
+  {
+    "id": 12,
+    "flightNumber": "PA212",
+    "airline": "Pacific Air",
+    "airlineLogo": "/images/airlines/pacific.svg",
+    "origin": {
+      "code": "SYD",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "destination": {
+      "code": "SIN",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "departureTime": "2026-09-19T12:23:12.653Z",
+    "arrivalTime": "2026-09-19T20:23:12.653Z",
+    "durationMinutes": 480,
+    "price": 470,
+    "currency": "USD",
+    "capacity": 24,
+    "status": "on-time",
+    "description": "Overnight run with lie-flat business seats, so you land looking like you didn't just pull off the trip of a lifetime.",
+    "image": "/images/destinations/sin.svg",
+    "createdAt": "2026-08-12T12:23:12.653Z",
+    "updatedAt": "2026-09-10T12:23:12.653Z"
+  }
+]

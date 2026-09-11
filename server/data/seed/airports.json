@@ -1,0 +1,52 @@
+[
+  {
+    "code": "JFK",
+    "city": "New York",
+    "country": "USA"
+  },
+  {
+    "code": "LHR",
+    "city": "London",
+    "country": "United Kingdom"
+  },
+  {
+    "code": "CDG",
+    "city": "Paris",
+    "country": "France"
+  },
+  {
+    "code": "DXB",
+    "city": "Dubai",
+    "country": "UAE"
+  },
+  {
+    "code": "SIN",
+    "city": "Singapore",
+    "country": "Singapore"
+  },
+  {
+    "code": "SYD",
+    "city": "Sydney",
+    "country": "Australia"
+  },
+  {
+    "code": "LAX",
+    "city": "Los Angeles",
+    "country": "USA"
+  },
+  {
+    "code": "HND",
+    "city": "Tokyo",
+    "country": "Japan"
+  },
+  {
+    "code": "FRA",
+    "city": "Frankfurt",
+    "country": "Germany"
+  },
+  {
+    "code": "CMB",
+    "city": "Colombo",
+    "country": "Sri Lanka"
+  }
+]
