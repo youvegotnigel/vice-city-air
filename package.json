@@ -1,6 +1,6 @@
 {
   "name": "flight-reservation-demo-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple flight reservation demo app used as an AUT (application under test) for UI, API, accessibility, security and performance test automation.",
   "main": "server/index.js",
   "scripts": {
