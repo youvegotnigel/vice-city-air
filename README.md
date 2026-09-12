@@ -17,6 +17,12 @@ model, and API reference. Importantly, it also documents the list of
 intentional "good" vs "bad" security practices this app ships with for
 security-test-automation purposes.
 
+## Screenshots
+
+| Flight search | Seat selection | Admin dashboard |
+|---|---|---|
+| [![Flight search](docs/screenshots/flight-search.png)](docs/screenshots/flight-search.png) | [![Seat selection](docs/screenshots/seat-selection.png)](docs/screenshots/seat-selection.png) | [![Admin dashboard](docs/screenshots/admin-dashboard.png)](docs/screenshots/admin-dashboard.png) |
+
 ## Login Credentials
 
 | Role | Email | Password |
