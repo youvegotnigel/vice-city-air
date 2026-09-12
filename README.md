@@ -180,8 +180,7 @@ Full details in [REQUIREMENTS.md](REQUIREMENTS.md).
 server/           Express API
   routes/         auth, flights, bookings, users, airports, dashboard, test hooks
   middleware/      auth (JWT), error handler, chaos/test-hook middleware
-  data/            JSON "database" files (live data)
-  data/seed/       pristine copy restored by POST /api/test/reset
+  data/            JSON "database" files (live data, regenerated on demand)
   utils/seed.js    generates the demo data (npm run seed)
 public/           Static single-page frontend (no build step)
   js/             api.js, state.js, utils.js, views.js (passenger), admin.js, router.js, app.js

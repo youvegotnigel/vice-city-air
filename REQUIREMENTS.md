@@ -137,8 +137,9 @@ this section is accidental. Treat this table as the "answer key."
 - **`flights.json`**. `id, flightNumber, airline, airlineLogo, origin, destination, departureTime, arrivalTime, durationMinutes, price, currency, capacity, status (on-time|delayed|cancelled), description, image, createdAt, updatedAt`
 - **`bookings.json`**. `id, bookingReference, userId, flightId, seats (array of 1-9 seat labels), passengerName, specialRequests, status (confirmed|cancelled), payment { cardLast4, amount (price × seats.length), currency, paidAt, receiptId }, createdAt, cancelledAt`
 
-`server/data/seed/` holds a pristine copy of the above, restored by
-`POST /api/test/reset` (also regenerable via `npm run seed`).
+`POST /api/test/reset` (and `npm run seed`) regenerate all of the above
+from scratch, giving a known starting point with timestamps relative to
+the current time.
 
 ## 8. API Endpoints
 

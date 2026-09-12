@@ -24,5 +24,4 @@ module.exports = {
   JWT_EXPIRES_IN: '2h',
   CORS_ORIGIN: (process.env.CORS_ORIGIN || 'http://localhost:3000').split(',').map((s) => s.trim()),
   DATA_DIR: path.join(__dirname, 'data'),
-  SEED_DIR: path.join(__dirname, 'data', 'seed'),
 };

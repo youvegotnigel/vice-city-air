@@ -1,14 +1,14 @@
 /**
  * Generates fresh demo data (users, airports, flights, bookings) into
- * server/data/*.json and a pristine copy into server/data/seed/*.json.
- * The seed copy is what POST /api/test/reset restores from.
+ * server/data/*.json. POST /api/test/reset calls this same function to
+ * restore a known starting point (with freshly-relative timestamps).
  *
  * Run with: npm run seed
  */
 const fs = require('fs');
 const path = require('path');
 const bcrypt = require('bcryptjs');
-const { DATA_DIR, SEED_DIR } = require('../config');
+const { DATA_DIR } = require('../config');
 
 const DAY = 24 * 60 * 60 * 1000;
 
@@ -294,10 +294,9 @@ function seed() {
   const collections = { 'airports.json': airports, 'flights.json': flights, 'users.json': users, 'bookings.json': bookings };
   for (const [file, data] of Object.entries(collections)) {
     writeJson(DATA_DIR, file, data);
-    writeJson(SEED_DIR, file, data);
   }
   // eslint-disable-next-line no-console
-  console.log('Seed data written to', DATA_DIR, 'and', SEED_DIR);
+  console.log('Seed data written to', DATA_DIR);
 }
 
 if (require.main === module) {
